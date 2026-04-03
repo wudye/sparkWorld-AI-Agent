@@ -1,0 +1,96 @@
+# ---------------------------
+# Python bytecode / cache
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.pyd
+*.dll
+
+# ---------------------------
+# Virtual environments
+# ---------------------------
+.venv/
+venv/
+env/
+ENV/
+.env
+# ---------------------------
+# Python packaging / build
+# ---------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# ---------------------------
+# Logs and runtime files
+# ---------------------------
+*.log
+*.tmp
+*.temp
+*.pid
+
+# ---------------------------
+# IDE / editor files
+# ---------------------------
+
+# VS Code
+.vscode/
+
+# JetBrains / PyCharm
+.idea/
+
+# Others
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Jupyter / IPython
+# ---------------------------
+.ipynb_checkpoints/
+.profile/
+.python_history
+
+# ---------------------------
+# Hugging Face / model caches
+# ---------------------------
+
+# Global HF cache (user-level) – usually outside repo, but ignore if present
+.huggingface/
+.hf_cache/
+
+# Local project-level caches (if you ever set cache_dir inside project)
+cache/
+models/
+datasets/
+
+# ---------------------------
+# Audio / temp artifacts from voice agent
+# ---------------------------
+# Temporary recordings / outputs (if you keep them in repo folder)
+*.wav
+*.mp3
+
+# If you save temp outputs to a specific folder, ignore it here, for example:
+# recordings/
+# temp_audio/
+
+# ---------------------------
+# OS-specific junk
+# ---------------------------
+ehthumbs.db
+desktop.ini
+
+# ---------------------------
+# uv / tools
+# ---------------------------
+.uv/
