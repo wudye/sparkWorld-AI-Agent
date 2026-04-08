@@ -94,3 +94,15 @@ desktop.ini
 # uv / tools
 # ---------------------------
 .uv/
+
+# 环境变量文件
+
+.env.local
+.env.dev
+.env.prod
+.env.test
+
+# 敏感文件
+app.log
+*.key
+*.pem
