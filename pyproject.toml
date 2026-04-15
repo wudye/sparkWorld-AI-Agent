@@ -14,6 +14,7 @@ dependencies = [
     "dotenv>=0.9.9",
     "edge-tts>=7.2.8",
     "fastapi>=0.135.3",
+    "filelock>=3.25.2",
     "ipykernel>=7.2.0",
     "jinja2>=3.1.6",
     "keyboard>=0.13.5",

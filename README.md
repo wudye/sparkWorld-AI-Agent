@@ -1,3 +1,24 @@
+https://juejin.cn/post/7526472026292764672
+https://github.com/stevenli91748/AI?tab=readme-ov-file
+https://github.com/jd-opensource/JoySafeter/tree/main
+
+https://github.com/shuhongfan/Python_RAG_Heima
+https://github.com/shuhongfan/NLP_heima
+
+
+kk吧-自然语言处理(NLP)-导师制名企实训班四期（价值23800元）     [复制链接] |主动推送
+
+链接: https://pan.baidu.com/s/1WGLPN--Og0Pa01h1f0sp4g 提取码: 3a6m
+北风网-AI人工智能顶级实战工程师就业课程
+https://pan.quark.cn/s/c3a48130c4fa#/list/share
+
+
+https://github.com/virattt/ai-hedge-fund/tree/main
+
+https://github.com/vnpy/vnpy/tree/master?tab=readme-ov-file
+https://github.com/bytedance/deer-flow
+
+
 # uvicorn app.main:app --reload       
 # 安装所有依赖
     uv sync
