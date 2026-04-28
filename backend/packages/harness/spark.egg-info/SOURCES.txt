@@ -1,0 +1,8 @@
+README.md
+main.py
+pyproject.toml
+spark.egg-info/PKG-INFO
+spark.egg-info/SOURCES.txt
+spark.egg-info/dependency_links.txt
+spark.egg-info/requires.txt
+spark.egg-info/top_level.txt
