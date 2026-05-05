@@ -299,7 +299,7 @@ print(f"Config saved to {display_hermes_home()}/config.yaml")
 ### 3.3 配置加载的优先级
 
 ```python
-# hermes_cli/config.py
+# hermes_cli/log_config.py
 DEFAULT_CONFIG = {
     "model": "anthropic/claude-opus-4.6",
     "max_iterations": 90,

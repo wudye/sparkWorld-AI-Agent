@@ -1,0 +1,30 @@
+2026-05-05 13:55:04 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:10:50 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:11:15 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:11:15 - packages.harness.config.app_config - INFO - F:\sparkWorld-AI-Agent\backend\packages\harness\config\app_config.py
+2026-05-05 14:11:15 - packages.harness.config.app_config - INFO - F:\sparkWorld-AI-Agent
+2026-05-05 14:11:15 - packages.harness.config.app_config - INFO - F:\
+2026-05-05 14:11:31 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:11:31 - packages.harness.config.app_config - INFO - F:\sparkWorld-AI-Agent\backend\packages\harness\config\app_config.py
+2026-05-05 14:11:31 - packages.harness.config.app_config - INFO - F:\sparkWorld-AI-Agent
+2026-05-05 14:11:31 - packages.harness.config.app_config - INFO - F:\
+2026-05-05 14:11:31 - packages.harness.config.app_config - INFO - (WindowsPath('F:/sparkWorld-AI-Agent/config.yaml'), WindowsPath('F:/config.yaml'))
+2026-05-05 14:14:23 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:14:23 - packages.harness.config.app_config - INFO - F:\sparkWorld-AI-Agent\backend\packages\harness\config\app_config.py
+2026-05-05 14:14:23 - packages.harness.config.app_config - INFO - F:\sparkWorld-AI-Agent\backend
+2026-05-05 14:14:23 - packages.harness.config.app_config - INFO - F:\sparkWorld-AI-Agent
+2026-05-05 14:14:23 - packages.harness.config.app_config - INFO - (WindowsPath('F:/sparkWorld-AI-Agent/backend/config.yaml'), WindowsPath('F:/sparkWorld-AI-Agent/config.yaml'))
+2026-05-05 14:16:53 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:28:24 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:29:29 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:30:22 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:30:22 - packages.harness.config.app_config - INFO - end test
+2026-05-05 14:37:17 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:37:17 - packages.harness.config.app_config - INFO - test in class
+2026-05-05 14:37:17 - packages.harness.config.app_config - INFO - end test
+2026-05-05 14:37:43 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:37:43 - packages.harness.config.app_config - INFO - test in class
+2026-05-05 14:37:43 - packages.harness.config.app_config - INFO - end test
+2026-05-05 14:40:14 - packages.harness.config.app_config - INFO - this is from child test
+2026-05-05 14:40:14 - packages.harness.config.app_config - INFO - test in class
+2026-05-05 14:40:14 - packages.harness.config.app_config - INFO - end test

@@ -73,7 +73,7 @@ def process_command(self, cmd_original: str):
 
 ### 3) 配置加载的优先级
 ```python
-# hermes_cli/config.py
+# hermes_cli/log_config.py
 
 def load_cli_config() -> dict:
     """按优先级加载配置"""
