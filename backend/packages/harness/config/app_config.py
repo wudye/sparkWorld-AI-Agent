@@ -29,6 +29,25 @@ def _default_config_candidates() -> tuple[Path, ...]:
 class AppConfig(BaseModel):
     log_level: str = Field(default="info", description="Logging level for deerflow modules (debug/info/warning/error)")
     token_usage: TokenUsageConfig = Field(default_factory=TokenUsageConfig, description="Token usage tracking configuration")
+    models: list[ModelConfig] = Field(default_factory=list, description="Available models")
+    sandbox: SandboxConfig = Field(description="Sandbox configuration")
+    tools: list[ToolConfig] = Field(default_factory=list, description="Available tools")
+    tool_groups: list[ToolGroupConfig] = Field(default_factory=list, description="Available tool groups")
+    skills: SkillsConfig = Field(default_factory=SkillsConfig, description="Skills configuration")
+    skill_evolution: SkillEvolutionConfig = Field(default_factory=SkillEvolutionConfig, description="Agent-managed skill evolution configuration")
+    extensions: ExtensionsConfig = Field(default_factory=ExtensionsConfig, description="Extensions configuration (MCP servers and skills state)")
+    tool_search: ToolSearchConfig = Field(default_factory=ToolSearchConfig, description="Tool search / deferred loading configuration")
+    title: TitleConfig = Field(default_factory=TitleConfig, description="Automatic title generation configuration")
+    summarization: SummarizationConfig = Field(default_factory=SummarizationConfig, description="Conversation summarization configuration")
+    memory: MemoryConfig = Field(default_factory=MemoryConfig, description="Memory subsystem configuration")
+    agents_api: AgentsApiConfig = Field(default_factory=AgentsApiConfig, description="Custom-agent management API configuration")
+    subagents: SubagentsAppConfig = Field(default_factory=SubagentsAppConfig, description="Subagent runtime configuration")
+    guardrails: GuardrailsConfig = Field(default_factory=GuardrailsConfig, description="Guardrail middleware configuration")
+    circuit_breaker: CircuitBreakerConfig = Field(default_factory=CircuitBreakerConfig, description="LLM circuit breaker configuration")
+    model_config = ConfigDict(extra="allow", frozen=False)
+    checkpointer: CheckpointerConfig | None = Field(default=None, description="Checkpointer configuration")
+    stream_bridge: StreamBridgeConfig | None = Field(default=None, description="Stream bridge configuration")
+
 
     def __init__(self, **data):
         super().__init__(**data)

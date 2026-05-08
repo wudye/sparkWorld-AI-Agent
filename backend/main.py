@@ -7,13 +7,17 @@ from utils.log_config import setup_logger
 from utils.log_config import get_logger
 from fastapi.security import APIKeyHeader, HTTPBearer
 
-from fastapi import Request
-from fastapi.responses import JSONResponse
 from utils.global_exception_handler import register_exception_handlers
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import agents
 
 from packages.harness.config.app_config import get_app_config
+import sys, os
+from pathlib import  Path
+
+BASE_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(BASE_DIR))
+
 setup_logger()
 logger = get_logger(__name__)
 
@@ -28,7 +32,7 @@ jwt_scheme = HTTPBearer(auto_error=False)
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     try:
         logger.info("hello in lifespan")
-        get_app_config()
+        app.state.config = get_app_config()
     except Exception:
         logger.exception("error in lifespan")
 
@@ -40,7 +44,7 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
 def create_app() -> FastAPI:
     app = FastAPI(
         title="SparkWorld AI Agent",
-        descripion="common ai agent harness includes everything",
+        description="common ai agent harness includes everything",
         version="0.1.0",
         lifespan=lifespan,
         docs_url="/docs",
@@ -129,17 +133,10 @@ def create_app() -> FastAPI:
 app = create_app()
 
 
-
-
-
-"""
 if __name__ == "__main__":
-
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
         port=8000,
         reload=True,
-        log_level="info",
     )
-"""
