@@ -49,3 +49,7 @@ models/
 
 # Notebook outputs
 *.nbconvert.ipynb
+
+
+docs
+*.node_modules

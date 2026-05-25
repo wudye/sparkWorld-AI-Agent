@@ -1,5 +1,6 @@
 from typing import Callable
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
 import asyncio
 import logging
@@ -11,7 +12,8 @@ from contextlib import asynccontextmanager
 
 
 
-get_app_config = spark_app_config.get_app_config
+
+get_app_config: Callable[[], None] = spark_app_config.get_app_config
 
 
 
